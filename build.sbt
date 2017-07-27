@@ -8,6 +8,8 @@ scalaVersion := "2.11.8"
 
 libraryDependencies ++= Seq( jdbc , cache , ws   , specs2 % Test )
 
+libraryDependencies +=  "org.reactivemongo" %% "play2-reactivemongo" % "0.12.5-play25"
+
 libraryDependencies += "org.scoverage" % "scalac-scoverage-plugin_2.11" % "1.1.1" % "provided"
 
 libraryDependencies += "junit" % "junit" % "4.10" % "test"
