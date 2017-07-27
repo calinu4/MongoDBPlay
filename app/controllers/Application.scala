@@ -6,11 +6,11 @@ import play.api.mvc._
 class Application extends Controller {
 
   def index = Action {
-    Ok(views.html.index("Hello world"))
+    Ok(views.html.index())
   }
 
   def page = Action {
-    Ok(views.html.index(""))
+    Ok(views.html.index())
   }
 
 }
