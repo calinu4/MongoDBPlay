@@ -1,0 +1,16 @@
+
+@(userForm:Form[User])(implicit messages: Messages)
+@import helper._
+@main("Users") {
+
+  <h1>Users</h1>
+  @form(action=routes.MongoDBController.create()) {
+    @inputText(userForm("age"),'_label -> "Age", '_showConstraints -> false)
+    @inputText(userForm("firstName"),'_label -> "First Name", '_showConstraints -> false)
+    @inputText(userForm("lastName"),'_label -> "Last Name", '_showConstraints -> false)
+    <input type="submit" value="Create User">
+  }
+
+
+
+}
